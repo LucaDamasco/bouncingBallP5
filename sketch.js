@@ -41,6 +41,7 @@ function speedDown() {
 function draw() {
   background(220);
   
+  fill(0, 0, 255);
   ellipse(cx, cy, 50);
   
   cx += vx;
@@ -58,6 +59,7 @@ function draw() {
     vy *= -1;
   } 
   
+  fill(0);
   textSize(36);
   textAlign(CENTER);
   text(`VX: ${vx.toFixed(1)} | VY: ${vy.toFixed(1)}`, width/2, height/2);
